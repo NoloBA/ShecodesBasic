@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bonolo Atong</title>
+    <style>
+        h2{
+            color: #EAE0DA;
+            font-size: 20px;
+        }
+        a{
+            color:#EAE0DA ;
+            text-decoration: none;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        .container{
+            max-width: 700px;
+            margin: 0 auto;
+            color: white;
+            margin: ;  
+        }
+        body{
+            background: linear-gradient(to left,#A0C3D2,#90bbce);
+            line-height: 1.4;      
+        }
+        
+        h1{
+            color: white;
+        }
+        h2{
+
+        }
+        .team{
+            display: block;
+            margin: 0 auto;
+            max-width: 50%;
+            border-radius: 5px;
+        }
+        .header{
+            display:block;
+            margin: 1px;
+            max-width: 100%;
+        }
+        .button{
+            background-color: white;
+            color: #A0C3D2;
+            margin:;
+            padding: 5px 10px;
+            border-radius: 5px;
+            border: none;
+            box-shadow: 10px 10px 50px white ;
+            cursor: pointer;
+        }
+        .button:hover{
+            background-color: #EAE0DA;
+            transition: all 200ms ease-in-out;
+        }
+        .builder{
+            text-decoration: none;
+            text-underline-offset: none;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/068/940/original/Bonolo_Atong_Tech_Enth.png?1677259526" class="header">
+    <hr>
+    <h1>
+        Walk through my journey into Tech!
+    </h1>
+    <h2>
+        <em>I am a girl with a dream to make it in Tech!</em>
+    </h2>
+    <hr>
+<!-- <img src="IMG_20210312_135516_875.jpg" alt="I'm singing" width="300" class="team"> -->
+    <p>
+        <strong></strong>
+    </p>
+    <p>
+        I have no formal training in the space and I'm grateful for opportunities presented
+        by organisations such as the <a href="https://www.shecodesfoundation.org" target="_blank">SheCodesFoundation</a>.
+        <br>
+        My interests mainly lie in FullStack Web Development!
+    </p>
+    <p>
+        Pleae do <strong>feel free</strong> to contact me to provide feedback on what you see.
+        <br>
+        If you're a fellow learner, you're welcome to network!<span>😛</span>
+    </p>
+
+    <button class="button" >
+        Contact Me
+    </button>
+    <p class="builder">
+        This page was built by <a href="https://www.linkedin.com/in/bonolo-atong/" target="_blank">Bonolo Atong</a>
+    </p>
+    </div>
+    <script>
+        function contact() {
+            let name = prompt("What is your name?");
+            let techie = prompt("Do you work in Tech?");
+            let updated = document.querySelector("h1");
+            techie = techie.toLowerCase();
+
+            if (techie === "yes") {
+                updated.innerHTML = `<br/> Thank you ${name}! I'm really looking forward to
+                networking with you!🤝`
+            } else {
+                updated.innerHTML = `<br/> Thank you ${name}! I'm really looking forward to 
+                your feedback!🤝`
+            }
+
+        }
+
+
+        let contactMe = document.querySelector("button");
+
+        contactMe.addEventListener("click", contact);
+    </script>
+</body>
+</html>
